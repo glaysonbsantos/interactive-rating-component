@@ -10,27 +10,49 @@ body {
   color: hsl(217deg, 12%, 63%);
 }
 
-.container {
-  background-color: red;
-}
-
 .card {
   margin: auto;
+  padding: 2rem;
   width: 375px;
+  border-radius: 20px;
   background-color: hsl(213deg, 19%, 18%);
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  list-style: none;
 }
 
 .circle {
   width: 50px;
   height: 50px;
-  background-color: hsl(220deg, 3%, 21%);
   border-radius: 50%;
-  text-align: center;
+  background-color: hsl(220deg, 3%, 21%);
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
   color: hsl(0deg, 0%, 100%);
   font-weight: 700;
+}
+
+.paragraph {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.btn {
+  width: 100%;
+  height: 35px;
+  background-color: hsl(25deg, 97%, 53%);
+  border: none;
+  border-radius: 20px;
+}
+.btn .paragraph {
+  color: hsl(0deg, 0%, 100%);
 }
 
 /*# sourceMappingURL=style.css.map */
