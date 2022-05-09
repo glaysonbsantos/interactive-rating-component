@@ -36,12 +36,6 @@ body {
 
 }
 
-.footer {
-  display: grid;
-  align-items: flex-end;
-  margin-bottom: 1rem;
-}
-
 .card {
   padding: 2rem;
   width: 360px;
@@ -150,6 +144,12 @@ a {
 
   background-color: $primary-circle-color;
   color: $primary-color;
+}
+
+.footer {
+  display: grid;
+  align-items: flex-end;
+  margin-bottom: 2rem;
 }
 
 footer {
