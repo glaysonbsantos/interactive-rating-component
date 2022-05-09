@@ -19,16 +19,27 @@ $secondary-circle-color: hsl(216, 12%, 54%);
 }
 
 body {
+  display: grid;
+
   background-color: $tertiary-color;
 
   font-family: "Overpass", sans-serif;
   color: $secondary-font-color;
 
+  height: 100vh;
+}
+
+.main {
   display: grid;
   justify-content: center;
-  align-content: center;
+  align-items: flex-end;
 
-  height: 100vh;
+}
+
+.footer {
+  display: grid;
+  align-items: flex-end;
+  margin-bottom: 1rem;
 }
 
 .card {
@@ -142,11 +153,6 @@ a {
 }
 
 footer {
-  position: absolute;
-  bottom: 1rem;
-  display: grid;
-  justify-content: center;
-
   .attribution {
     font-size: 11px;
     text-align: center;
