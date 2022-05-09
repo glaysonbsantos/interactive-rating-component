@@ -1,0 +1,52 @@
+// Colors
+$primary-color: hsl(25, 97%, 53%);
+$secondary-color: hsl(213, 19%, 18%);
+$tertiary-color: hsl(216, 12%, 8%);
+
+// Font Colors
+$primary-font-color: hsl(0, 0%, 100%);
+$secondary-font-color: hsl(217, 12%, 63%);
+
+// Circle color
+$primary-circle-color: hsl(220, 3%, 21%);
+$secondary-circle-color: hsl(216, 12%, 54%);
+
+// App
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $tertiary-color;
+
+    font-family: 'Overpass', sans-serif;
+    color: $secondary-font-color;
+}
+
+.container {
+    background-color: red;
+}
+
+.card {
+    margin: auto;
+    width: 375px;
+    background-color: $secondary-color;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+
+    background-color: $primary-circle-color;
+
+    border-radius: 50%;
+
+    text-align: center;
+}
+
+.title {
+    color: $primary-font-color;
+    font-weight: 700;
+}

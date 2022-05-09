@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216deg, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  color: hsl(217deg, 12%, 63%);
+}
+
+.container {
+  background-color: red;
+}
+
+.card {
+  margin: auto;
+  width: 375px;
+  background-color: hsl(213deg, 19%, 18%);
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: hsl(220deg, 3%, 21%);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.title {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */
