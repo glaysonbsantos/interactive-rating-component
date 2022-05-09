@@ -23,10 +23,15 @@ body {
 
   font-family: "Overpass", sans-serif;
   color: $secondary-font-color;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  height: 100vh;
 }
 
 .card {
-  margin: auto;
   padding: 2rem;
   width: 360px;
   height: 400px;
@@ -35,7 +40,9 @@ body {
   background-color: $secondary-color;
 }
 
-.center {
+.thank-you {
+  display: none;
+
   text-align: center;
 
   img {
@@ -61,7 +68,7 @@ a {
   color: $secondary-font-color;
 }
 
-.circle {
+.circle, .circle-star {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -76,6 +83,15 @@ a {
 .circle.paragraph:hover {
   background-color: $secondary-circle-color;
   color: $primary-font-color;
+}
+
+.circle:active, .selected {
+  background-color: $primary-color;
+  color: $primary-font-color;
+  &:hover {
+    background-color: $primary-color !important;
+    color: $primary-font-color !important;
+  }
 }
 
 .title {
@@ -123,4 +139,18 @@ a {
 
   background-color: $primary-circle-color;
   color: $primary-color;
+}
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 35.5rem;
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: $primary-color;
+  }
 }

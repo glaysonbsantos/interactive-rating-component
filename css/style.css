@@ -8,10 +8,13 @@ body {
   background-color: hsl(216deg, 12%, 8%);
   font-family: "Overpass", sans-serif;
   color: hsl(217deg, 12%, 63%);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
 }
 
 .card {
-  margin: auto;
   padding: 2rem;
   width: 360px;
   height: 400px;
@@ -19,13 +22,14 @@ body {
   background-color: hsl(213deg, 19%, 18%);
 }
 
-.center {
+.thank-you {
+  display: none;
   text-align: center;
 }
-.center img {
+.thank-you img {
   padding: 0.5rem;
 }
-.center h1 {
+.thank-you h1 {
   margin-top: 0.5rem;
 }
 
@@ -42,7 +46,7 @@ a {
   color: hsl(217deg, 12%, 63%);
 }
 
-.circle {
+.circle, .circle-star {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -55,6 +59,15 @@ a {
 .circle.paragraph:hover {
   background-color: hsl(216deg, 12%, 54%);
   color: hsl(0deg, 0%, 100%);
+}
+
+.circle:active, .selected {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.circle:active:hover, .selected:hover {
+  background-color: hsl(25deg, 97%, 53%) !important;
+  color: hsl(0deg, 0%, 100%) !important;
 }
 
 .title {
@@ -93,6 +106,19 @@ a {
   border: none;
   border-radius: 35px;
   background-color: hsl(220deg, 3%, 21%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 35.5rem;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
   color: hsl(25deg, 97%, 53%);
 }
 

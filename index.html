@@ -22,57 +22,48 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="card">
-      <div class="circle">
-        <img src="./images/icon-star.svg"/>
+      <div class="rating">
+        <div class="circle-star">
+          <img src="./images/icon-star.svg" />
+        </div>
+
+        <h1 class="title">How did we do?</h1>
+
+        <p class="paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <ul class="list">
+          <a href="#"><li class="circle paragraph">1</li></a>
+          <a href="#"><li class="circle paragraph">2</li></a>
+          <a href="#"><li class="circle paragraph">3</li></a>
+          <a href="#"><li class="circle paragraph">4</li></a>
+          <a href="#"><li class="circle paragraph">5</li></a>
+        </ul>
+
+        <button class="btn" id='btn' type="submit">
+          <p class="paragraph">S U B M I T</p>
+        </button>
       </div>
 
-      <h1 class="title">How did we do?</h1>
+      <div class="thank-you">
+        <img src="./images/illustration-thank-you.svg" />
 
-      <p class="paragraph">
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
+        <button class="btn-rate">
+          <p class="paragraph">You selected <span id="note"></span> out of 5</p>
+        </button>
 
-      <ul class="list">
-        <a href="#"><li class="circle paragraph">1</li></a>
-        <a href="#"><li class="circle paragraph">2</li></a>
-        <a href="#"><li class="circle paragraph">3</li></a>
-        <a href="#"><li class="circle paragraph">4</li></a>
-        <a href="#"><li class="circle paragraph">5</li></a>
-      </ul>
+        <h1 class="title">Thank you!</h1>
 
-      <button class="btn" type="submit">
-        <p class="paragraph">S U B M I T</p>
-      </button>
-    </div>
-    <br>
-    <div class="card center">
-      <img src="./images/illustration-thank-you.svg"/>
-
-      <button class="btn-rate">
-        <p class="paragraph">You selected X out of 5</p>
-      </button>
-
-      <h1 class="title">Thank you!</h1>
-
-      <p class="paragraph">
-        We appreciate you taking the time to give a rating. If you ever need
-        more support, don’t hesitate to get in touch!
-      </p>
+        <p class="paragraph">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
     </div>
 
     <footer>
@@ -80,7 +71,11 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >
+        . Coded by
+        <a href="https://www.linkedin.com/in/glaysonbsantos/" target="_blank"
+          >Glayson B. Santos</a
+        >.
       </div>
     </footer>
 
